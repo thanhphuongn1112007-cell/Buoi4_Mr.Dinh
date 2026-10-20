@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product</title>
+    <style>
+        table { border: 1px solid #aaa; border-collapse: collapse; width: 1080px; }
+        th, td { text-align: left; padding: 4px; }
+        th { border-bottom: 1px solid #aaa; }
+    </style>
+</head>
+<body>
+    <h1>New Product</h1>
+    <hr>
+    
+    <p>
+        Product Name <input type="text" id="productName">
+        Quantity <input type="number" id="productQuantity">
+    </p>
+    <p>
+        Unit Price <input type="number" id="productPrice">
+        Discount <input type="number" id="productDiscount">
+    </p>
+    <p>
+        <button onclick="addProduct()">Sell</button>
+        <button onclick="clearForm()">Cancel</button>2
+    </p>
+
+    <table id="productTable">
+        <tr>
+            <th>ID</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Discount</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Áo thun</td>
+            <td>12</td>
+            <td>$30000</td>
+            <td>10</td>
+            <td>$324000</td>
+        </tr>
+    </table>
+
+    <script src="Bai6.js"></script>
+</body>
+</html>

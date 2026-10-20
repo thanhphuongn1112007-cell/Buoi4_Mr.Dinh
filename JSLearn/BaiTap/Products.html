@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 2px solid #333;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+    <script src="Pruducts.js"></script>
+</head>
+<body>
+    <h1>New Product</h1>
+    <hr>
+    <div class="form">
+        <p>
+            Product Name <input type="text" id="productName">
+            Quantity <input type="number" id="productQuantity">
+        </p>
+        <p>
+            Unit Price <input type="number" id="productPrice">
+            Discount <input type="number" id="productDiscount">
+        </p>
+        <p>
+            <button onclick="addProduct()">Sell</button>
+            <button onclick="clearForm()">Cancel</button>
+        </p>
+    </div>
+
+    <div class="table">
+        <table id="productTable">
+            <tr>
+                <th>ID</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Discount</th>
+                <th>Subtotal</th>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>Áo thun</td>
+                <td>12</td>
+                <td>$30000</td>
+                <td>10</td>
+                <td>$324000</td>
+            </tr>
+        </table>
+
+</body>
+</html>
